@@ -1,0 +1,23 @@
+.restname{
+    font-weight: bold;
+    font-size: 125%;
+}
+
+li {
+    list-style-type: none;
+    padding: 5px;
+    min-width: 400px;
+    text-align: center;
+}
+
+body{
+    background:#B0A1BA;
+    border: 5px;
+    border-width: thin;
+    text-align: center;
+}
+
+.box{
+    font-family: 'Lilita One', cursive;
+    background: linear-gradient(#A5B5BF, #BFF0D4);
+}

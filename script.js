@@ -26,7 +26,21 @@ function displayMatches(){
     else if (matches.length >= 10){
         for (var i = 0; i < 10; i++) {
             let listitem = document.createElement('li');
-            listitem.innerHTML = `${matches[i].name}`
+            if (matches[i].address_line_2 == '------'){
+                listitem.innerHTML = `<div class='box'>
+                                        <div class='restname'>${matches[i].name}</div><br>
+                                            <address>${matches[i].address_line_1}, ${matches[i].city} ${matches[i].state} ${matches[i].zip}</address>
+                                            category: ${matches[i].category}<br>
+                                    </div>`
+            }
+            else{
+                listitem.innerHTML = `<div class='box'>
+                                        <div class='restname'>${matches[i].name}</div><br>
+                                            <address>${matches[i].address_line_1} ${matches[i].address_line_2}, ${matches[i].city} ${matches[i].state} ${matches[i].zip}</address>
+                                            category: ${matches[i].category}<br>
+                                    </div>`
+            }
+            
             node.appendChild(listitem);
         }
     }
