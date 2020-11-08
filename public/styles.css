@@ -19,6 +19,7 @@ body{
 }
 
 .box{
+    margin: 10px;
     font-family: 'Lilita One', cursive;
     background: linear-gradient(#A5B5BF, #BFF0D4);
 }
